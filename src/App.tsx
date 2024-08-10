@@ -1,11 +1,12 @@
-import reactLogo from "./assets/react.svg";
-
 import "./App.css";
+import ListView from "./components/ListView";
 
 function App() {
-
-
-  return <>Hello </>;
+  return (
+    <>
+      <ListView />
+    </>
+  );
 }
 
 export default App;
