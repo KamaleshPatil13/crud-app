@@ -39,10 +39,11 @@ const ListView = () => {
     );
   }, [search, celebrities]);
 
-  const handleAccordionChange = (panel: string) => (event: React.ChangeEvent<{}>, isExpanded: boolean) => {
-    setExpanded(isExpanded ? panel : false);
-  };
-
+  const handleAccordionChange =
+    (panel: string) => (event: React.ChangeEvent<{}>, isExpanded: boolean) => {
+      setExpanded(isExpanded ? panel : false);
+      console.log("event" + event);
+    };
 
   const deleteUser = (id: number) => {
     celebrities &&
